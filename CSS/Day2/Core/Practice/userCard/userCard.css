@@ -16,14 +16,7 @@
     background-color: lightseagreen;
     margin-bottom: 40px;    
 }
-.card{
-    display: flex;
-    justify-content:left ;
-    align-items: left;
-    flex-direction: column;
-    color: black;   
-    
-}
+
 
 #user{
     border-radius: 50%;
