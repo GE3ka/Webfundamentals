@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ButtonClicker.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Dojonary</h1>
+        <input type="text" value="Search">
+        <button id="loginBtn" onclick="log()">Login</button>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="dictionary">
+                <div class="left">
+                    <h2>ninja</h2>
+                    <h3><em>noun</em></h3>
+                    <h3>Plural:<em>&nbsp ninjas</em></h3>
+                    <div class="likes">
+                        <span id="nbNinjaLikes">0</span>
+                        <button id="ninjaLikes" onclick="ninjaLikes()">Likes</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>A practioner skilled in the <a href="#">Japenese</a> art of <a href="#">ninjutsu</a></h3>
+                </div>                
+            </div>
+            <div class="dictionary">
+                <div class="left">
+                <h2>ninja</h2>
+                    <h3><em>noun</em></h3>
+                    <h3>Plural:<em>&nbsp ninjas</em></h3>
+                    <div class="likes">
+                        <span id="nbProgLikes">0</span>
+                        <button id="progLikes" onclick="progLikes()">Likes</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>A <a href="#">programmer</a>&nbsp  who breaks down problems with <a href="#">zen</a>-like focus</h3>
+                </div>
+            </div>        
+        </div>
+        <div class="side">
+            <div class="rightSide">
+                <h2>Dojonary is defined by <h2 id="special">You</h2></h2>
+            </div>
+            <button id="definition" onclick="disappear()">Add Definition</button>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="ButtonClicker.js"></script>
+    
+</body>
+</html>
