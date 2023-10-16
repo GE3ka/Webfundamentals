@@ -22,6 +22,7 @@ function ninjaLikes(){
     nb=nbNinja.innerText;   
     nb++;
     nbNinja.innerText =nb;    
+    alert("Ninja was liked");
 }
 
 
