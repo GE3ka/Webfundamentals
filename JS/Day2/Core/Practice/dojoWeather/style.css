@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.container{
+    width:100%;
+    
+    margin: 0;    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+.header{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(20, 107, 78);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: blanchedalmond;
+    
+}
+ul{
+    list-style-type: none;
+    display: flex;
+	flex-direction: row;
+   
+    height: 100%;
+}
+li{
+    padding-right: 20px;   
+    align-self: center;
+    
+}
+
+
+.main{
+    padding: 0;
+    margin: 0;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activeCity{
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid rgb(2, 61, 46);
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.choiceOfTemp{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+select{
+    width: 50px;
+    height: 35px;
+    background-color: rgb(188, 241, 224);
+    border-radius: 5px;
+}
+.displayWeather{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.oneDay{
+    width: 25%;
+    height: 90%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(146, 224, 224);
+
+}
+img{
+    width:70%;
+    border-radius: 50%;
+    
+}
+.tempDegree{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: large;
+    font-weight:bold ;
+}
+.maxTemp{
+    color: red ;
+}
+.minTemp{
+    color:rgb(16, 70, 139);
+}
+#cookies{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(199, 147, 247);
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    
+
+}
+.cookiesContent{
+    width: 60%;
+}
+#accept{
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}

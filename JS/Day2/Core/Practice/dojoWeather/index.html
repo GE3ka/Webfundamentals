@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li id="burbank" onclick="changeCityAlert(this)">Burbank</li>
+                <li id="chicago" onclick="changeCityAlert(this)">Chicago</li>
+                <li id="dallas" onclick="changeCityAlert(this)">Dallas</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="activeCity">
+                <h2>San Jose</h2>
+                <div class="choiceOfTemp">
+                    <span>Show temperature in </span>
+                    <select name="temperature" id="temperature" onchange="changeTemp(this)">
+                        <option value="Celcuis">°C</option>
+                        <option value="Fahrenheit">°F</option>
+                    </select>
+                </div>                
+            </div>
+            <div class="displayWeather">
+                <div class="oneDay">
+                    <h3>Today</h3>
+                    <img src="images/some_rain.png">
+                    <p>Some rain</p>
+                    <div class="tempDegree">
+                        <div>
+                            <span class="maxTemp">24</span><span style="color: red;">°</span>
+                        </div>
+                        <div>
+                            <span class="minTemp">18</span><span style="color:rgb(16, 70, 139);">°</span>
+                        </div>    
+                    </div>
+                </div>
+                <div class="oneDay">
+                    <h3>Tomorrow</h3>
+                    <img src="images/some_sun.png">
+                    <p>Some sun</p>
+                    <div class="tempDegree">
+                        <div>
+                            <span class="maxTemp">27</span><span style="color: red;">°</span>
+                        </div>
+                        <div>
+                            <span class="minTemp">19</span><span style="color:rgb(16, 70, 139);">°</span>
+                        </div>    
+                    </div>
+                </div>
+                <div class="oneDay">
+                    <h3>Friday</h3>
+                    <img src="images/some_clouds.png">
+                    <p>Some clouds</p>
+                    <div class="tempDegree">
+                        <div>
+                            <span class="maxTemp">21</span><span style="color: red;">°</span>
+                        </div>
+                        <div>
+                            <span class="minTemp">16</span><span style="color:rgb(16, 70, 139)">°</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="oneDay">
+                    <h3>Saturday</h3>
+                    <img src="images/some_sun.png">
+                    <p>Some sun</p>
+                    <div class="tempDegree">
+                        <div>
+                            <span class="maxTemp">26</span><span style="color: red;">°</span>
+                        </div>
+                        <div>
+                            <span class="minTemp">21</span><span style="color:rgb(16, 70, 139);">°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cookies">
+                <div class="cookiesContent">
+                    <h2>Stop! Cookies Time</h2>
+                    <p>We use cookies (sadly not the edible one) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read More...</a></p>
+                </div>
+                    <button id="accept" onclick="iAcceptCookies()">I Accept</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="code.js"></script>
+</body>
+</html>
