@@ -37,7 +37,7 @@ insert into favorites (book_id,user_id) values (5,4);
 
 
 select name, created_at,updated_at from users 
-join favorites where users.id = favorites.user_id and favorites.book_id = 3;
+join favorites on users.id = favorites.user_id and favorites.book_id = 3;
 
 delete from favorites where book_id=3 limit 1;
 
@@ -45,11 +45,11 @@ insert into favorites (book_id,user_id) values (2,5);
 
 
 select * from books 
-join favorites where favorites.book_id= books.id and  favorites.user_id = 3 ;
+join favorites on favorites.book_id= books.id and  favorites.user_id = 3 ;
 
 
 select * from users
-join favorites where favorites.user_id= users.id and  favorites.book_id=5;
+join favorites on favorites.user_id= users.id and  favorites.book_id=5;
 
 
 
